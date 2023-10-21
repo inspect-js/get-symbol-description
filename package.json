@@ -41,8 +41,8 @@
 	},
 	"homepage": "https://github.com/inspect-js/get-symbol-description#readme",
 	"dependencies": {
-		"call-bind": "^1.0.2",
-		"get-intrinsic": "^1.2.1"
+		"call-bind": "^1.0.5",
+		"get-intrinsic": "^1.2.2"
 	},
 	"devDependencies": {
 		"@ljharb/eslint-config": "^21.1.0",
