@@ -4,7 +4,7 @@ var GetIntrinsic = require('get-intrinsic');
 
 var callBound = require('call-bind/callBound');
 
-var $SyntaxError = GetIntrinsic('%SyntaxError%');
+var $SyntaxError = require('es-errors/syntax');
 var getGlobalSymbolDescription = GetIntrinsic('%Symbol.keyFor%', true);
 var thisSymbolValue = callBound('%Symbol.prototype.valueOf%', true);
 var symToStr = callBound('Symbol.prototype.toString', true);
