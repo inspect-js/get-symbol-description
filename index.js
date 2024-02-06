@@ -8,6 +8,7 @@ var $SyntaxError = require('es-errors/syntax');
 var getGlobalSymbolDescription = GetIntrinsic('%Symbol.keyFor%', true);
 var thisSymbolValue = callBound('%Symbol.prototype.valueOf%', true);
 var symToStr = callBound('Symbol.prototype.toString', true);
+var $strSlice = callBound('String.prototype.slice');
 
 var getInferredName = require('./getInferredName');
 
@@ -36,7 +37,7 @@ module.exports = callBound('%Symbol.prototype.description%', true) || function g
 		}
 	}
 
-	desc = symToStr(sym).slice(7, -1); // str.slice('Symbol('.length, -')'.length);
+	desc = $strSlice(symToStr(sym), 7, -1); // str.slice('Symbol('.length, -')'.length);
 	if (desc) {
 		return desc;
 	}
