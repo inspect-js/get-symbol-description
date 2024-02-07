@@ -1,6 +1,6 @@
 {
 	"name": "get-symbol-description",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"description": "Gets the description of a Symbol. Handles `Symbol()` vs `Symbol('')` properly when possible.",
 	"main": "index.js",
 	"exports": {
